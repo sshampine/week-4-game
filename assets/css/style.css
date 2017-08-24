@@ -1,63 +1,23 @@
-* {
-	box-sizing: border-box;
-}
 
 body {
-	max-width: 960px;
-	background-image: url(concrete-texture.png);
-	margin-left: 10px;
-}
-
-#heading {
-	margin-bottom: 5px;
-	
-}
-
-#heading h1 {
-	color: white;
-	background-color: orange;
-	font-size: 24px;
-	padding: 20px 0px;
-	display: inline-block;
-}
-
-#instructions {
-	background-color: #ffffe0;
-	max-width: 330px;
-	margin-bottom: 5px;
-}
-
-#instructions p {
-	color: green;
-	padding-top: 10px;
-	font-size: 16px;
-}
-
-#instructions p:last-child {
-	padding-bottom: 70px;
+	font-family: 'Caveat', cursive;
+	line-height: 150%;
+	font-weight: 600;
+	background-image: url("../images/Un-goro-Crater-map.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 #random-number{
-	background-color: green;
-	width: 150px;
-	height: 75px;
-	float: left;
-	bottom-margin: 5px;
 	font-size: 28px;
 }
 
-#stats {
-	background-color: cyan;
+.gnome {
 	width: 100px;
-	height: 75px;
+	height: auto;
 	float: left;
-	margin-left: 5px;
-}
-
-#crystals {
-	clear: both;
-	display: block;
-	overflow: none;
+	margin-right: 5px;
 }
 
 #score {
@@ -70,15 +30,14 @@ body {
 }
 
 #player-score {
-	margin-top: 5px;
-	width: 175px;
-	height: 75px;
-	background-color: #4aaaa5;
-	color: #fff;
 	font-size: 28px;
-}
+} 
 
 .crystal-image {
 	width: 100px;
 	height: 100px;
+}
+
+.well {
+	background-image: url("../images/parchment.jpg")
 }

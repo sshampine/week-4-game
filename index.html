@@ -4,32 +4,47 @@
 	<title>Crystal Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
   		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   		crossorigin="anonymous"></script>
 
 </head>
 <body>
-	<div id="heading">
-		<h1>Crystals Collector!</h1>
+	<div class="container">	
+		<div class="row"><br></div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="well wellOne">
+					<h2>Crystals of Power</h2>
+					<img class="img-circle gnome" src="assets/images/jdCollie.jpg">
+					<p>Un'Goro crystals are everywhere! They're all over. Most ignore them but I have a strange feeling they hold a power within.</p>
+					<p>I'd like to examine more but I'm running a little low.</p>
+					<p>Go to Buzzbox 232 and deposit the number of crytals I need. The number will showup on the Gnome-d-cator. The Buzzbox will only hold a certain number of crystals. If you overload it, the crystals will shatter and you'll have to collect more and take them to the next Buzzbox.</p>
+					<p>The Buzzbox will condence the crystals to into their essence. Collect as many crystal essences as you can. Try not to destory too many though!</p>
+					<br>
+					<p>J.D. Collie in Un'Goro Crater wants you to collect as many crystal essence as you can</p>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div id="crystals"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="well">
+					<h2>Quest Results</h2>
+					<p>Gnome-d-cator: <span class="label label-primary" id="random-number">0</span></p>
+					<br>
+					<p>Crystals in Buzzbox: <span class="label label-info" id="player-score">0</span></p>
+					<br>
+					<div id="stats">
+						<p>Crystal Essence Collected: <span class="label label-success" id="win">0</span></p>
+						<p>Crystal Essences Lost: <span class="label label-danger" id="loss">0</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div id="instructions">
-		<p>You will be given a random number at the start of the game</p>
-		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p>
-		<p>You win the game by matching your total score to random numer, you lose the game if your total score goes above random number.</p>
-		<p>The value of each crystal is hiddne from you until you click on it.</p>
-		<p>Each time when the game starts, the game will change the value of each crystal.</p>
-	</div>
-	<div id="random-number">98</div>
-	<div id="stats">
-		<p>Wins: <span id="win">0</span></p>
-		<p>Loss: <span id="loss">0</span></p>
-	</div>
-	<div id="crystals">
-		
-	</div>
-	<div id="score">Your crystal total is:</div>
-	<div id="player-score"></div>
 
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
